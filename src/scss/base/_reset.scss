@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap");
+
+:root {
+  // BACKGROUND COLORS
+  --color-primary: #0f2027;
+  --color-primary--light: #203a43;
+  --color-primary--main: #2c5364;
+
+  // FOR TEXT COLORS
+  --color-grey--light-1: #faf9f9;
+  --color-grey--light-2: #f4f2f2;
+  --color-grey--light-3: #f0eeee;
+  --color-grey--light-4: #ccc;
+
+  --grey-dark--1: #333;
+  --grey-dark--2: #777;
+  --grey-dark--3: #999;
+
+  --shadow-dark: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  --line--dark: 1px solid var(--grey-dark--2);
+  --line--light: 1px solid var(--color-grey--light-2);
+
+  // FONT FAMILIES
+  // --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  // --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  // --mono: ui-monospace, Consolas, monospace;
+}
+
+$bp-largest: 75em; //1200px/16
+$bp-large: 68.75em; //1100px/16
+$bp-medium: 56.25em; // 900px/16
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 10/16
+  box-sizing: border-box;
+
+  @media (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: lato, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--color-grey--light-4);
+  min-height: 100vh;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-primary--main),
+    var(--color-primary--light)
+  );
+  background-size: cover;
+  background-repeat: none;
+
+  // TO BE REOMOVED
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bitcount Single", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
