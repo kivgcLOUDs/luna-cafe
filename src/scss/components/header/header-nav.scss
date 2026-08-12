@@ -1,0 +1,36 @@
+///////////////////////////////
+/// HEADER NAV
+/// ////////////////////////////
+.header {
+  &-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    z-index: 1000;
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+    &-link {
+      font-size: 1.6rem;
+      color: var(--color-grey--light-1);
+      text-decoration: none;
+      list-style-type: none;
+      letter-spacing: 0.2rem;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: var(--color-grey--light-2);
+        transform: translateY(-2px);
+        text-shadow: 0 0 10px var(--color-primary--light);
+        text-decoration: underline;
+      }
+    }
+  }
+}

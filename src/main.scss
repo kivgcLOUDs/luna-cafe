@@ -1,10 +1,11 @@
 // BASE SCSS
 @import "./scss/base/variables";
 @import "./scss/base/reset";
-@import "./scss/base/typography";
+@import "./scss/base/typography/typography";
 
 // COMPONENTS SCSS
-// @import "./scss/components/button";
+@import "./scss/components/header/header-nav";
+@import "./scss/components/header/header-button";
 
 // LAYOUT SCSS
-// @import "./scss/layout/header";
+@import "./scss/layouts/header";

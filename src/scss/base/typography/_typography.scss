@@ -1,0 +1,19 @@
+.header {
+  &-nav {
+    &-logo-text {
+      font-family: var(--font-logo);
+      font-size: 6rem;
+      letter-spacing: 0.5rem;
+      font-weight: 500;
+      color: var(--color-grey--light-1);
+    }
+  }
+
+  &-content {
+    &-heading {
+      font-family: var(--font-heading);
+      font-size: 5rem;
+      font-weight: 700;
+    }
+  }
+}
